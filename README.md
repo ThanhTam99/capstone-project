@@ -1,39 +1,29 @@
-## Capstone project
+# Final project for Full stack web developer udacity
 
-I used the render platform to deploy my flask app
+The deployed link: https://capstone-project-y4dl.onrender.com
 
-The base url for api: https://fsnd-final-project.onrender.com
+API for movie:
+ - Get all movie: https://capstone-project-y4dl.onrender.com/movies (use GET method)
+ - Insert a new movie: https://capstone-project-y4dl.onrender.com/movies (use POST method)
+ - Update a movie: https://capstone-project-y4dl.onrender.com/movies/<movie_id> (use PATCH method)
+ - Delete a movie: https://capstone-project-y4dl.onrender.com/movies/<movie_id> (use DELETE method)
 
-We will use postman to call each API below
+API for actor:
+ - Get all actors: https://capstone-project-y4dl.onrender.com/actors (use GET method)
+ - Insert a new actor: https://capstone-project-y4dl.onrender.com/actors (use POST method)
+ - Update a actor: https://capstone-project-y4dl.onrender.com/actors/<actor_id> (use PATCH method)
+ - Delete a actor: https://capstone-project-y4dl.onrender.com/actors/<actor_id> (use DELETE method)
 
-- To get all movies: https://fsnd-final-project.onrender.com/movies (GET)
-- To get all actors: https://fsnd-final-project.onrender.com/actors (GET)
-- To create a new movie: https://fsnd-final-project.onrender.com/movies (POST)
-- To create a new actor: https://fsnd-final-project.onrender.com/actors (POST)
-- To update a movie: https://fsnd-final-project.onrender.com/movies/<movie_id> (PATCH)
-- To update an actor: https://fsnd-final-project.onrender.com/actors/<actor_id> (PATCH)
-- To delete a movie: https://fsnd-final-project.onrender.com/movies/<movie_id> (DELETE)
-- To delete an actor: https://fsnd-final-project.onrender.com/actors/<actor_id> (DELETE)
+ Use Auth0 link to generate the jwt token and paste it to the postman to get data:
+ https://dev-4nlbfgydd36gc8xi.us.auth0.com/authorize?audience=https://capstone-project-y4dl.onrender.com&response_type=token&client_id=AYE6QkiF4sref07jWV3D0BoLQH1oav6A&redirect_uri=https://capstone-project-y4dl.onrender.com
 
-I have created three users with different roles:
-- Casting Assistant: Can view actors and movies
-- Casting Director:	All permissions a Casting Assistant has and Add or delete an actor from the database Modify actors or movies
-- Executive Producer: All permissions a Casting Director has and Add or delete a movie from the database
-
-To get the jwt token for each user:
- - Please go to the following url: https://dev-wpvjr6p5aq21gtxe.us.auth0.com/authorize?audience=http://127.0.0.1:5001/&response_type=token&client_id=cLJLlK2VtwFVSOYSTjI1st6s79rNJj3r&redirect_uri=https://fsnd-final-project.onrender.com/
-
- - For Casting Assistant, please use the following email and password:
-   - Email: castingassistant@email.com
-   - Password: user1@a.
- 
- - For Casting Director, please use the following email and password:
-    - Email: castingdirector@email.com
-    - Password: user1@a.
- 
- - For Executive Producer, please use the following email and password:
-    - Email: executiveproducer@email.com
-    - Password: user1@a.
- 
-After logining successfully, you will see the url like that: https://fsnd-final-project.onrender.com/#access_token=exampletokens&expires_in=7200&token_type=Bearer
-Please copy the value of access_token and use postman to call the API.
+ For each role below, please use the following email and password to login
+  - Casting Assistant:
+   - Email: user01@example.email
+   - Password: tamhnt123.
+  - Casting Director:
+   - Email: user02@example.email
+   - Password: tamhnt123.
+  - Executive Producer
+   - Email: user03@example.email
+   - Password: tamhnt123.
